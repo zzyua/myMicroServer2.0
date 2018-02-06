@@ -1,8 +1,9 @@
 spring:
   kafka:
-    bootstrap-servers: 127.0.0.1:9092，127.0.0.1:9093，127.0.0.1:9094
+#    bootstrap-servers: 127.0.0.1:9092，127.0.0.1:9093，127.0.0.1:9094
+    bootstrap-servers: 127.0.0.1:9092
     consumer:
-      group-id: zzyclod
+      group-id: test-consumer-group
       auto-offset-reset: earliest
       enable-auto-commit: true
 #  kafka序列化和反序列化设置
