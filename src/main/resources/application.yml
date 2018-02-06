@@ -1,0 +1,8 @@
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092，127.0.0.1:9093，127.0.0.1:9094
+    consumer:
+      group-id: zzyclod
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+
