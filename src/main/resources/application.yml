@@ -5,4 +5,10 @@ spring:
       group-id: zzyclod
       auto-offset-reset: earliest
       enable-auto-commit: true
+#  kafka序列化和反序列化设置
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer:  org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer:  org.apache.kafka.common.serialization.StringSerializer
 
