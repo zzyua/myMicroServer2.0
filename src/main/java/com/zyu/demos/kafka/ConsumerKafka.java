@@ -21,6 +21,7 @@ public class ConsumerKafka {
      * @param content
      */
     //TODO kafka 放开注视，启动kafka消费者. 监听kafka服务是否有消息
+    //test
 //    @KafkaListener(topics = "test")
     public  void receiveAndProcessMessage(String content){
         logger.info("kafka 消费者接收到到消息是:{}",content);
