@@ -18,10 +18,10 @@ public class ConsumerKafka {
 
     /**
      * 消费者监听消费信息
-     * KafkaListener 监听指定到topics
      * @param content
      */
-    @KafkaListener(topics = "test")
+    //TODO kafka 放开注视，启动kafka消费者
+//    @KafkaListener(topics = "test")
     public  void receiveAndProcessMessage(String content){
         logger.info("kafka 消费者接收到到消息是:{}",content);
         KafkaMessage  message = gson.fromJson(content,KafkaMessage.class);
