@@ -1,0 +1,27 @@
+spring:
+  kafka:
+#    bootstrap-servers: 127.0.0.1:9092，127.0.0.1:9093，127.0.0.1:9094
+    bootstrap-servers: 192.168.253.8:9092
+    consumer:
+      group-id: 002
+      enable-auto-commit: true
+#  kafka序列化和反序列化设置
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer:  org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: latest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer:  org.apache.kafka.common.serialization.StringSerializer
+
+myconfg:
+  kafka:
+    queueTopics: queue
+    queueGroupId: queueId
+server:
+  port: 8082
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        jobDispatch:
+#          group: credit
