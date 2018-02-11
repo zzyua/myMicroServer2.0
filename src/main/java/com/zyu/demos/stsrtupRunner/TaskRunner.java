@@ -1,5 +1,7 @@
 package com.zyu.demos.stsrtupRunner;
 
+import org.apache.kafka.common.protocol.types.Field;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.Ordered;
@@ -15,10 +17,12 @@ import org.springframework.core.Ordered;
  */
 public class TaskRunner implements ApplicationRunner, Ordered {
 
+    @Value("${myconfg.kafka.active}")
+    private String acticve ;
 
     @Override
     public void run(ApplicationArguments args)  {
-        System.out.println("TaskRunner'level is 2");
+        System.out.println("acticve = "+acticve+" ;TaskRunner'level is 2");
     }
 
 

@@ -23,8 +23,18 @@ public class ConsumerKafka {
     //TODO kafka 放开注视，启动kafka消费者. 监听kafka服务是否有消息
     //testbbbbb
 //    @KafkaListener(topics = "test")
-    public  void receiveAndProcessMessage(String content){
-        logger.info("kafka 消费者接收到到消息是:{}",content);
-        KafkaMessage  message = gson.fromJson(content,KafkaMessage.class);
+//    public  void receiveAndProcessMessage(String content){
+//        logger.info("消费topics为test的消息，接收到到消息是:{}",content);
+//        KafkaMessage  message = gson.fromJson(content,KafkaMessage.class);
+//    }
+//
+//    @KafkaListener(topics = "${myconfg.kafka.queueTopics}" ,groupId = "${myconfg.kafka.queueGroupId}")
+//    public void getQueueMsg(String content){
+//        logger.info("消费topics为queue的消息，接收到到消息是:{}",content);
+//    }
+
+    @KafkaListener(topics = "queue" )
+    public void getQueueMsgtest(String content){
+        logger.info("消费topics为queue的消息，接收到到消息是:{}",content);
     }
 }
