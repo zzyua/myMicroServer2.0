@@ -1,4 +1,4 @@
-package com.zyu.designs.entity;
+package com.zyu.designs.singleton;
 
 /**
  * 线程池 示例

@@ -1,7 +1,5 @@
 package com.zyu.designs.singleton;
 
-import com.zyu.designs.entity.PoolDemo;
-
 public enum SingleSton_Enum {
     INSTANCE ;
 
