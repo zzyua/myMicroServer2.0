@@ -6,7 +6,6 @@ public enum SingleSton_Enum {
     private PoolDemo pool;
 
 
-
     SingleSton_Enum(){
         pool = new PoolDemo();
         pool.setId("001");
