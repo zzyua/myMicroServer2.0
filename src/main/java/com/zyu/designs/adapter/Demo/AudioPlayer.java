@@ -1,4 +1,4 @@
-package com.zyu.designs.adapter.cainiaoDemo;
+package com.zyu.designs.adapter.Demo;
 
 /**
  * 默认mp3播放器

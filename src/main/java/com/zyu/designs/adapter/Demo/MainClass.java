@@ -1,4 +1,4 @@
-package com.zyu.designs.adapter.cainiaoDemo;
+package com.zyu.designs.adapter.Demo;
 
 public class MainClass {
     public static void main(String[] args) {
