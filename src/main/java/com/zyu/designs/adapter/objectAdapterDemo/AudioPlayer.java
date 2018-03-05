@@ -1,4 +1,4 @@
-package com.zyu.designs.adapter.Demo;
+package com.zyu.designs.adapter.objectAdapterDemo;
 
 /**
  * 默认mp3播放器

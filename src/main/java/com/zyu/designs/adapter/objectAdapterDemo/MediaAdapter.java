@@ -1,4 +1,4 @@
-package com.zyu.designs.adapter.Demo;
+package com.zyu.designs.adapter.objectAdapterDemo;
 
 public class MediaAdapter implements  MediaPlayer {
 
