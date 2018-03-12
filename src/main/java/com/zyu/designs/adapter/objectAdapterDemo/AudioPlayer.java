@@ -4,6 +4,8 @@ package com.zyu.designs.adapter.objectAdapterDemo;
  * 默认mp3播放器
  *
  * 播放vlc和mp4的文件时，调用适配器调用
+ *
+ * Client
  */
 public class AudioPlayer implements  MediaPlayer {
     MediaAdapter mediaAdapter;

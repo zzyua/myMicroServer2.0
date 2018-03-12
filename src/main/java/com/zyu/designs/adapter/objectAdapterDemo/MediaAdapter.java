@@ -1,5 +1,8 @@
 package com.zyu.designs.adapter.objectAdapterDemo;
 
+/**
+ * Adapter
+ */
 public class MediaAdapter implements  MediaPlayer {
 
     AdvancedMediaPlayer advancedMediaPlayer ;
